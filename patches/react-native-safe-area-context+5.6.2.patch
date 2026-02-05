@@ -1,0 +1,28 @@
+diff --git a/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt b/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt
+index 0000000..1111111 100644
+--- a/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt
++++ b/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt
+@@ -28,11 +28,13 @@ target_include_directories(
+   ${LIB_ANDROID_GENERATED_COMPONENTS_DIR}
+ )
+ 
++# Link C++ standard library (fixes undefined symbol errors with NDK 27 / New Architecture)
+ # https://github.com/react-native-community/discussions-and-proposals/discussions/816
+ # This if-then-else can be removed once this library does not support version below 0.76
+ if (REACTNATIVE_MERGED_SO)
+   target_link_libraries(
+           ${LIB_TARGET_NAME}
+           fbjni
+           jsi
+           reactnative
++          c++_shared
+   )
+ else()
+   target_link_libraries(
+@@ -54,6 +56,7 @@ else()
+           rrc_view
+           turbomodulejsijni
+           yoga
++          c++_shared
+   )
+ endif()

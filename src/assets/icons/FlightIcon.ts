@@ -1,0 +1,2 @@
+/** viewBox adds padding so path (which touches x=0) is not clipped at edges. */
+export const FLIGHT_ICON_SVG = `<svg width="22" height="11" viewBox="-2 -2 26 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.968 10.103 0 5.058l2.27-.72 2.27 1.981 4.016-1.981L4.54.194h4.016c.29 0 1.431.36 3.666 1.802C15.365.915 16.064.514 17.46.194c3.143-.72 4.54.72 4.54 1.801-4.889 2.463-15.26 7.531-16.238 8.108-.978.576-2.27.24-2.794 0Z" fill="#B79555"/></svg>`;

@@ -11,6 +11,10 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A7F1001A68108700A75B9A /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7F1002A68108700A75B9A /* Poppins-Light.ttf */; };
+		A7F1003A68108700A75B9A /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7F1004A68108700A75B9A /* Poppins-Medium.ttf */; };
+		A7F1005A68108700A75B9A /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7F1006A68108700A75B9A /* Poppins-Regular.ttf */; };
+		A7F1007A68108700A75B9A /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7F1008A68108700A75B9A /* Poppins-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-PenguinLondon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PenguinLondon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PenguinLondon/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PenguinLondon/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7F1002A68108700A75B9A /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Light.ttf"; path = "PenguinLondon/Fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
+		A7F1004A68108700A75B9A /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Medium.ttf"; path = "PenguinLondon/Fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		A7F1006A68108700A75B9A /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.ttf"; path = "PenguinLondon/Fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		A7F1008A68108700A75B9A /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-SemiBold.ttf"; path = "PenguinLondon/Fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -43,11 +51,24 @@
 			children = (
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
+				A7F1009A68108700A75B9A /* Fonts */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 			);
 			name = PenguinLondon;
+			sourceTree = "<group>";
+		};
+		A7F1009A68108700A75B9A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A7F1002A68108700A75B9A /* Poppins-Light.ttf */,
+				A7F1004A68108700A75B9A /* Poppins-Medium.ttf */,
+				A7F1006A68108700A75B9A /* Poppins-Regular.ttf */,
+				A7F1008A68108700A75B9A /* Poppins-SemiBold.ttf */,
+			);
+			name = Fonts;
+			path = PenguinLondon/Fonts;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -159,6 +180,10 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				A7F1001A68108700A75B9A /* Poppins-Light.ttf in Resources */,
+				A7F1003A68108700A75B9A /* Poppins-Medium.ttf in Resources */,
+				A7F1005A68108700A75B9A /* Poppins-Regular.ttf in Resources */,
+				A7F1007A68108700A75B9A /* Poppins-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,2 @@
+/** Paint palette icon – white for Settings "Change app color". */
+export const PAINT_ICON = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 20h16v-2H4v2zm14.5-4.5L17 14l1.5-1.5c.6-.6.6-1.5 0-2.1l-1.4-1.4c-.6-.6-1.5-.6-2.1 0L13 12.6 4.4 4 6 2.4 20.6 17l-2.1 2.1zM12 6.5l2.1 2.1-4.2 4.2-2.1-2.1L12 6.5zM6 4l4 4-2.5 2.5-1.5-1.5c-.6-.6-.6-1.5 0-2.1L6 4z" fill="#FFFFFF"/></svg>`;

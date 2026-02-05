@@ -1,0 +1,2 @@
+export const MAIL_ICON =
+  '<svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.5 11.256V4.614A1.829 1.829 0 0 1 1.511 2.98L6.083.693a1.829 1.829 0 0 1 1.634 0l4.572 2.286A1.828 1.828 0 0 1 13.3 4.615v6.64a1.829 1.829 0 0 1-1.829 1.83H2.33A1.829 1.829 0 0 1 .5 11.254Z" stroke="#B79555" stroke-linecap="round" stroke-linejoin="round"/><path d="m2.329 4.856 4.588 2.742 4.555-2.742" stroke="#B79555" stroke-linecap="round" stroke-linejoin="round"/></svg>';

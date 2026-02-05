@@ -1,0 +1,49 @@
+---
+alwaysApply: true
+---
+
+You are a senior React Native architect.
+
+TASK:
+Refactor the existing project structure to a scalable production-grade architecture.
+
+RULES:
+1. Separate screens into two top-level folders:
+   - src/auth (before authentication)
+   - src/app (after authentication)
+
+2. Move ALL reusable UI into src/components:
+   - Move FlightCard, HotelCard, CarLimousineCard into src/components/cards
+   - Extract Quote card logic into a reusable QuoteCard component
+   - Ensure no screen directly contains reusable UI logic
+
+3. Remove all per-screen styles.ts files.
+   - Create a centralized styling system under src/styles:
+     - colors.ts
+     - spacing.ts
+     - typography.ts
+     - layout.ts
+     - components.ts
+   - Replace inline and screen styles with imports from src/styles
+
+4. Update all imports to use path alias @/
+   - Example: import { FlightCard } from '@/components/cards'
+
+5. Ensure navigation logic still works:
+   - RootNavigator handles auth vs app flow
+   - MainLayout only renders app screens
+
+6. Clean barrel exports:
+   - Update index.ts files so screens and components are easy to import
+
+7. DO NOT break functionality.
+   - Preserve UI behavior
+   - Preserve props
+   - Preserve visual layout
+
+8. After refactor:
+   - No duplicate styles
+   - No screen-specific UI components
+   - Clear separation of auth and app flows
+
+Proceed step-by-step and refactor the codebase accordingly.

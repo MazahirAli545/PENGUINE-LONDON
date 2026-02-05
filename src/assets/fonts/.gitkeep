@@ -1,0 +1,2 @@
+# Place .ttf / .otf font files here
+# Link via react-native.config.js (assets) or react-native-asset

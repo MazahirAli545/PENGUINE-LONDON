@@ -1,45 +1,42 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
+ * PENGUIN LONDON - Root component.
+ * Shows splash screen first, then main app (SafeArea + providers + navigator).
  */
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
-import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
+import React, { useState, useEffect } from 'react';
+import { StatusBar } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { SplashScreen } from '@/auth';
+import { AppProvider } from '@/store';
+import { RootNavigator } from '@/navigation';
+
+const SPLASH_DURATION_MS = 2500;
 
 function App() {
-  const isDarkMode = useColorScheme() === 'dark';
+  const [showSplash, setShowSplash] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowSplash(false), SPLASH_DURATION_MS);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (showSplash) {
+    return (
+      <>
+        <StatusBar barStyle="light-content" backgroundColor="#222222" />
+        <SplashScreen />
+      </>
+    );
+  }
 
   return (
     <SafeAreaProvider>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <AppContent />
+      <StatusBar barStyle="dark-content" />
+      <AppProvider>
+        <RootNavigator />
+      </AppProvider>
     </SafeAreaProvider>
   );
 }
-
-function AppContent() {
-  const safeAreaInsets = useSafeAreaInsets();
-
-  return (
-    <View style={styles.container}>
-      <NewAppScreen
-        templateFileName="App.tsx"
-        safeAreaInsets={safeAreaInsets}
-      />
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default App;

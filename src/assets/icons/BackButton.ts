@@ -1,0 +1,2 @@
+/** Back arrow – white for Figma: rounded square outline, transparent background, white chevron. */
+export const BACK_BUTTON_SVG = `<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M28.75 20a.625.625 0 0 0-.625-.625H13.384l3.933-3.932a.626.626 0 1 0-.884-.885l-5 5a.624.624 0 0 0 0 .885l5 5a.626.626 0 0 0 .884-.885l-3.933-3.933h14.741A.625.625 0 0 0 28.75 20Z" fill="#FFFFFF"/></svg>`;
