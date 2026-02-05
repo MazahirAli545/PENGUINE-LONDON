@@ -62,6 +62,23 @@ If everything is set up correctly, you should see your new app running in the An
 
 This is one way to run your app — you can also build it directly from Android Studio or Xcode.
 
+## Project structure
+
+The app uses a **production-ready folder structure** under `src/`:
+
+- **`src/assets`** – images, fonts, icons (with barrel exports)
+- **`src/components`** – `ui/` (Button, AppText) and `common/` (ScreenContainer)
+- **`src/screens`** – screen components with per-screen `styles.ts`
+- **`src/styles`** – theme (colors, spacing, typography) and global styles
+- **`src/constants`** & **`src/config`** – app config, API paths, env
+- **`src/services`** – API client and service layer
+- **`src/hooks`** & **`src/utils`** – custom hooks and pure helpers
+- **`src/navigation`** – navigator and param types
+- **`src/store`** – app-level state (e.g. theme)
+
+Use the **`@/`** path alias for `src/` (e.g. `import { Button } from '@/components'`).  
+See **`src/STRUCTURE.md`** for conventions and best practices.
+
 ## Step 3: Modify your app
 
 Now that you have successfully run the app, let's make changes!
